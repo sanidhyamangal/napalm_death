@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Napalm Death</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+		<link rel="icon" sizes="192x192" href="{{ url_for('static', filename='images/icon-192x192.png') }}">
+		<link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1 style="font-size: 70px; color: silver;"><span style="color: red;">Na</span>palm <span style="color: red;">De</span>ath</h1>
+					<p></p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Proceed Downwards</a>
+				</footer>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2><span style="color: red">Na</span>palm <span style="color: red">De</span>ath</h2>
+				</header>
+				<p>Napalm Death is an ardent application of technology in the domain of health care.<br />
+				It is backed up by the ironclad features of <span style="font-weight: 400; font-size: 25px; color: orange;">Blockchain</span> in order to maintain perfect <br>unbiasedness and uses accurate and efficient <span style="font-weight: 400; font-size: 25px; color: orange;">Machine Learning</span> algorithms for <br>correct predictions of possible epidemics and detecting irregularities.<br />
+				<footer>
+					<a href="#anal" class="button style2 scrolly" style="color: black;">Start Analysis</a>
+				</footer>
+			</section>
+
+			<article class="container box style3" id="anal">
+				<header>
+					<h2>State Data Analyzer</h2>
+				</header>
+				<form method="post" action="/analysis">
+					<div class="row gtr-50">
+						  <select class = "col-6 col-12-mobile" name="state">
+    							<option value="Andhra Pradesh">Andhra Pradesh</option>
+    							<option value="Madhya Pradesh">Madhya Pradesh</option>
+    							<option value="Uttar Pradesh">Uttar Pradesh</option>
+    							<option value="West Bengal">West Bengal</option>
+    							<option value="Punjab">Punjab</option>
+    							<option value="Rajasthan">Rajasthan</option>
+    							<option value="Orrisa">Orrisa</option>
+    							<option value="Gujarat">Gujarat</option>
+    							<option value="Kerela">Kerela</option>
+    							<option value="Karnataka">Karnataka</option>
+    						</select>
+  						<br><br>
+  						<select class = "col-6 col-12-mobile" name="disease">
+    							<option value="malaria">Malaria</option>
+    							<option value="diarrhoea">Diarrhoea</option>
+    							<option value="asthma">Respiratory Disorders</option>
+    							<option value="influenza">Viral Fever</option>
+    						</select>
+						<select class = "col-6 col-12-mobile" name="year">
+    							<option value="2000">2000</option>
+    							<option value="2001">2001</option>
+    							<option value="2002">2002</option>
+    							<option value="2003">2003</option>
+    							<option value="2004">2004</option>
+    							<option value="2005">2005</option>
+    							<option value="2006">2006</option>
+    							<option value="2007">2007</option>
+    							<option value="2008">2008</option>
+    							<option value="2009">2009</option>
+    							<option value="2010">2010</option>
+    							<option value="2011">2011</option>
+    							<option value="2012">2012</option>
+    							<option value="2013">2013</option>
+    							<option value="2014">2014</option>
+    							<option value="2015">2015</option>
+    							
+    						</select>
+						<div class="col-12">
+							<ul class="actions">
+								<li><input type="submit" value="Analyze" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design by: CYB3RF001</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='app.js') }}"></script>
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Napalm Death</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1 style="font-size: 70px; color: silver;"><span style="color: red;">Na</span>palm <span style="color: red;">De</span>ath</h1>
+					<p></p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Proceed Downwards</a>
+				</footer>
+			</section>
+
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<div class="inner">
+					<header>
+						<h2>StateWide Ranking<br />
+						Nationwide</h2>
+					</header>
+					<ol>
+					{% for state in states %}
+						<li>{{state}}</li>
+				{% endfor %}
+				</ol>
+					<footer>
+					<a href = "#second" class="button style2 scrolly" style="color: black;">Proceed Downwards</a>
+				</footer>
+				</div>
+			</article>
+
+			<article id="second" class="container box style1 left">
+				<a href="#" class="image fit"><img src="static/ranking11.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Criterion<br />
+						StateWide Correlation</h2>
+					</header>
+					<p>REFERENCES:<br><span style="color: green;">Available Beds</span><br><span style="color: orange;">DHC, CHC, PHC</span><br><span style="color: blue;">Death by Disease</span></p>
+					<footer>
+					<a href={{ url_for('prescribe') }} class="button style2 scrolly" style="color: black;">Bonus Facts!</a>
+				</footer>
+				</div>
+			</article>
+
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design by: CYB3RF001</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>

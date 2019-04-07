@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Graphacts (FacTract)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet">
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+</head>
+<body style="background-image:url('./static/piper.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;">
+
+<!-- Header -->
+			<section id="header">
+				<header>
+					<h1 style="font-size: 70px; color: silver;"><span style="color: red;">Na</span>palm <span style="color: red;">De</span>ath</h1>
+					<p></p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Proceed Downwards</a>
+				</footer>
+			</section>
+
+<div class="container-fluid" id = "banner">
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+  		{% for image in images %}
+				<img src="data:image/jpeg;base64,{{ image }}" style="padding: 20px; border: 20px solid rgba(255, 255, 255, .5); border-radius: 10%;margin-bottom: 20px; height: 300px;width:300px;">
+		{% endfor %} 
+		</div>
+		<div class="col-md-3">
+		</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+	<div class="footer-factract" style="background-color: rgba(0,0,0,.7);padding: 30px; color: white; text-align: center; font-size: 30px; margin-top: 20px;">
+		<p style="font-family: 'Just Me Again Down Here', cursive;"><a href={{url_for('home')}}>Napalm Death! by Pied Piper</a></p>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
